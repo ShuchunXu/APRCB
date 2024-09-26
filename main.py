@@ -38,7 +38,7 @@ args = parser.parse_args()
 print(args)
 
 
-data_dir = '/mandapeng03/Experiment/dataset/AdversarialTrainDataset/NEU-CLS_'+str(args.imbalance)
+data_dir = datapath
 result_path=os.path.join( './result_'+str(args.num_epochs),str(args.imbalance),args.train_type) 
 if not os.path.exists(result_path):
     os.makedirs(result_path)
